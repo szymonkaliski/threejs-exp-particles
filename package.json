@@ -1,0 +1,22 @@
+{
+  "name": "threejs-exp-particles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js:web.js --live --port 3000",
+    "dist": "browserify index.js | uglifyjs > web.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "perlin-simplex": "0.0.2",
+    "three": "^0.75.0",
+    "three-orbit-controls": "^72.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "^8.2.1",
+    "uglifyjs": "^2.4.10"
+  }
+}
